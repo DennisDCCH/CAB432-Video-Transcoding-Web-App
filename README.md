@@ -45,7 +45,7 @@ Core criteria
 
 ### Web client
 
-- **One line description:** React Web App
+- **One line description:** React Web Application
 - **Video timestamp:** 1:55
 - **Relevant files:**
   - /client/src
@@ -73,13 +73,12 @@ Core criteria
 
 #### Second kind
 
-- **One line description:** Video File and Image File (Thumbnail)
+- **One line description:** Video File
 - **Type:** Unstructured, Blob Storage
 - **Rationale:** Videos are too large for database.  No need for additional functionality.
 - **Video timestamp:** 0:26
 - **Relevant files:**
   - /server/controllers/videoController.js 10
-  - /server/thumbnails (Only initialised after launching the web application)
   - /server/uploads (Only initialised after launching the web application)
 
 ### CPU intensive task
@@ -137,16 +136,20 @@ Additional criteria
 
 ### Additional kinds of data
 
-- **One line description:** Not attempted
-- **Video timestamp:**
+- **One line description:** Image File
+- **Video timestamp:** 0:26
 - **Relevant files:**
+  - /server/ffmpeg.js 27
+  - /server/thumbnails (Only initialised after launching the web application)
 
 
 ### Significant custom processing
 
-- **One line description:** Not attempted
-- **Video timestamp:**
+- **One line description:** Capturing thumbnail from video file uploaded
+- **Video timestamp:** 1:55
 - **Relevant files:**
+  - /server/controllers/videoController.js 10
+  - /server/ffmpeg.js 27
 
 
 ### Live progress indication
