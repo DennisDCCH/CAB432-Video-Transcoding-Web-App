@@ -18,7 +18,6 @@ Core criteria
 - **ECR Repository name:** n12150801/video-transcoding
 - **Video timestamp:** 
 - **Relevant files:**
-    - 
 
 ### Docker image running on EC2
 
@@ -30,7 +29,6 @@ Core criteria
 - **One line description:** Registration and Login done through the web app, using JSON web token and storing it in cookie
 - **Video timestamp:**
 - **Relevant files:** 
-    - 
 
 ### User dependent functionality
 
@@ -42,15 +40,13 @@ Core criteria
 
 - **One line description:** React Web App
 - **Video timestamp:**
-- **Relevant files:** /client/src
-    - 
+- **Relevant files:**
 
 ### REST API
 
 - **One line description:** Endpoints split into 2 categories, 1 for user related, 1 for video related
 - **Video timestamp:** 
 - **Relevant files:**
-    - 
 
 ### Two kinds of data
 
@@ -61,7 +57,6 @@ Core criteria
 - **Rationale:**
 - **Video timestamp:**
 - **Relevant files:**
-    - 
 
 #### Second kind
 
@@ -70,21 +65,18 @@ Core criteria
 - **Rationale:**
 - **Video timestamp:**
 - **Relevant files:**
-  - 
 
 ### CPU intensive task
 
 - **One line description:** Video Transcoding Application
 - **Video timestamp:** 
 - **Relevant files:**
-    - 
 
 ### CPU load testing method
 
 - **One line description:** Launching the client and server and manually uploading, reformating video
 - **Video timestamp:** 
 - **Relevant files:**
-    - 
 
 Additional criteria
 ------------------------------------------------
@@ -94,7 +86,6 @@ Additional criteria
 - **One line description:** Not attempted
 - **Video timestamp:**
 - **Relevant files:**
-    - 
 
 
 ### Use of external API(s)
@@ -102,7 +93,6 @@ Additional criteria
 - **One line description:** Not attempted
 - **Video timestamp:**
 - **Relevant files:**
-    - 
 
 
 ### Extensive web client features
@@ -110,7 +100,6 @@ Additional criteria
 - **One line description:** File Dropzone
 - **Video timestamp:**
 - **Relevant files:**
-    - 
 
 
 ### Sophisticated data visualisations
@@ -118,7 +107,6 @@ Additional criteria
 - **One line description:** Not attempted
 - **Video timestamp:**
 - **Relevant files:**
-    - 
 
 
 ### Additional kinds of data
@@ -126,7 +114,6 @@ Additional criteria
 - **One line description:** Not attempted
 - **Video timestamp:**
 - **Relevant files:**
-    - 
 
 
 ### Significant custom processing
@@ -134,7 +121,6 @@ Additional criteria
 - **One line description:** Not attempted
 - **Video timestamp:**
 - **Relevant files:**
-    - 
 
 
 ### Live progress indication
@@ -142,7 +128,6 @@ Additional criteria
 - **One line description:** Not attempted
 - **Video timestamp:** 
 - **Relevant files:**
-    - 
 
 
 ### Infrastructure as code
@@ -150,7 +135,6 @@ Additional criteria
 - **One line description:** Not attempted
 - **Video timestamp:** 
 - **Relevant files:**
-    - 
 
 
 ### Other
@@ -158,4 +142,3 @@ Additional criteria
 - **One line description:** Not attempted
 - **Video timestamp:**
 - **Relevant files:**
-    - 
