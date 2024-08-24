@@ -56,6 +56,8 @@ Core criteria
 - **Video timestamp:** 0:52
 - **Relevant files:**
   - /server/routes
+  - /server/controllers
+  - /server/models
 
 ### Two kinds of data
 
