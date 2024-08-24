@@ -1,14 +1,14 @@
 # Node modules directory
-node_modules/
+/node_modules
 
 # SQLite database
-mydatabase.db
+.mydatabase.db
 
 # Output directory
-output-directory/
+/output-directory/
 
 # Thumbnails
-thumbnails/
+/thumbnails
 
 # Uploads
-uploads/
+/uploads
