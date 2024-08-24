@@ -62,22 +62,23 @@ Core criteria
 #### First kind
 
 - **One line description:** Video Metadata
-- **Type:** Structured
-- **Rationale:**
+- **Type:** Structured, SQLite3, no ACID requirements
+- **Rationale:** Need to be able to query for user and video data.  Low chance of multiple writes to single file or user data.
 - **Video timestamp:** 0:26
 - **Relevant files:**
   - /server/database.js
+  - /server/models
 
 #### Second kind
 
 - **One line description:** Video File and Image File (Thumbnail)
-- **Type:** Unstructured
-- **Rationale:**
+- **Type:** Unstructured, Blob Storage
+- **Rationale:** Videos are too large for database.  No need for additional functionality.
 - **Video timestamp:** 0:26
 - **Relevant files:**
   - /server/controllers/videoController.js 10
-  - /server/thumbnails
-  - /server/uploads
+  - /server/thumbnails (Only initialised after launching the web application)
+  - /server/uploads (Only initialised after launching the web application)
 
 ### CPU intensive task
 
