@@ -8,6 +8,9 @@ Overview
 - **Student number:** n12150801
 - **Application name:** Video Transcoding Web App
 - **Two line description:** Web application that allows users to upload videos, transcode into different formats and download. The app utilizes Docker for containerized deployment and integrates with AWS ECR for image management, and EC2 instance.
+### Video Demonstration
+[![Video Here](https://img.youtube.com/vi/NhyooAm1Kts/0.jpg)](https://youtu.be/NhyooAm1Kts)
+
 
 
 Core criteria
