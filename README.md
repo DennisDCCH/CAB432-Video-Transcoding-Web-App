@@ -7,7 +7,7 @@ Overview
 - **Name:** Dennis Chen 
 - **Student number:** n12150801
 - **Application name:** Video Transcoding Web App
-- **Two line description:** "A web application that allows users to upload videos, transcode them into different formats and download the processed files. The app utilizes Docker for containerized deployment and integrates with AWS ECR for image management, and EC2 instance."
+- **Two line description:** Web application that allows users to upload videos, transcode into different formats and download. The app utilizes Docker for containerized deployment and integrates with AWS ECR for image management, and EC2 instance.
 
 
 Core criteria
@@ -30,25 +30,32 @@ Core criteria
 
 - **One line description:** Registration and Login done through the web app, using JSON web token and storing it in cookie
 - **Video timestamp:** 1:55
-- **Relevant files:** 
+- **Relevant files:**
+  - /server/routes/userRoute.js 6, 9
+  - /server/controllers/userController.js 9, 34  
 
 ### User dependent functionality
 
 - **One line description:** Users can only view their own videos uploaded
 - **Video timestamp:** 3:41
 - **Relevant files:**
+  - /server/routes/videoRoute.js 9
+  - /server/controller/videoController.js 95
+  - /server/models/video.js 15
 
 ### Web client
 
 - **One line description:** React Web App
 - **Video timestamp:** 1:55
 - **Relevant files:**
+  - /client/src
 
 ### REST API
 
 - **One line description:** Endpoints split into 2 categories, 1 for user related, 1 for video related
 - **Video timestamp:** 0:52
-- **Relevant files:** 
+- **Relevant files:**
+  - /server/routes
 
 ### Two kinds of data
 
@@ -59,6 +66,7 @@ Core criteria
 - **Rationale:**
 - **Video timestamp:** 0:26
 - **Relevant files:**
+  - /server/database.js
 
 #### Second kind
 
@@ -67,27 +75,34 @@ Core criteria
 - **Rationale:**
 - **Video timestamp:** 0:26
 - **Relevant files:**
+  - /server/controllers/videoController.js 10
+  - /server/thumbnails
+  - /server/uploads
 
 ### CPU intensive task
 
 - **One line description:** Video Transcoding Application with ffmpeg
 - **Video timestamp:** 0:00
 - **Relevant files:**
+  - /server/ffmpeg.js
+  - /server/routes/videoRoute.js 16
+  - /server/controllers/videoController.js 188
 
 ### CPU load testing method
 
 - **One line description:** Launching the client and server and manually uploading, reformating video
 - **Video timestamp:** 3:04
-- **Relevant files:**
 
 Additional criteria
 ------------------------------------------------
 
 ### Extensive REST API features
 
-- **One line description:** Not attempted
-- **Video timestamp:**
+- **One line description:** User - Registration / Logout, Video - Delete / Download 
+- **Video timestamp:** 1:55
 - **Relevant files:**
+  - /server/routes
+  - /server/controllers
 
 
 ### Use of external API(s)
@@ -99,9 +114,15 @@ Additional criteria
 
 ### Extensive web client features
 
-- **One line description:** File Dropzone
-- **Video timestamp:**
+- **One line description:** File Dropzone / Navbar / Cards 
+- **Video timestamp:** 2:28
 - **Relevant files:**
+  - /client/src/components/Dropzone/Dropzone.jsx
+  - /client/src/components/Navbar/Navbar.jsx
+  - /client/src/components/Navbar/Navbar.css
+  - /client/src/components/VideoCard/VideoCard.jsx
+  - /client/src/pages/Upload/Upload.jsx
+  - /client/src/pages/Video/Video.jsx
 
 
 ### Sophisticated data visualisations
