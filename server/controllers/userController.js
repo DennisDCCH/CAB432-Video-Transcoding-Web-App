@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const userModel = require('../models/user.js');
 
@@ -70,7 +70,7 @@ const login_user = (req, res) => {
             res.cookie('token', token, {httpOnly: true, secure: true, sameSite: 'Strict' });
 
             // Successful login
-            res.json({ message: "Login Successful", userID: user.id });
+            res.json({ message: "Login Successful", userID: user.id, token });
         })
     })
 }

@@ -93,10 +93,16 @@ const uploadVideo = async (req, res) => {
 }
 
 const authorVideo = (req, res) => {
-    const token = req.cookies.token; // Assuming the JWT is stored in a cookie named 'token'
+    let token = req.cookies.token; // Assuming the JWT is stored in a cookie named 'token'
 
     if (!token) {
-        return res.status(401).json({ error: 'Unauthorized' });
+        const authHeader = req.headers.authorization;
+
+        if (!authHeader || !authHeader.startsWith('Bearer ')) {
+            return res.status(401).json({ error: 'Unauthorized' });
+        }
+    
+        token = authHeader.split(' ')[1]; // Extract the token from the 'Bearer <token>' format
     }
 
     // Decode the JWT to get the authorId
@@ -238,14 +244,13 @@ const getFormatFromMimeType = (mimeType) => {
 const downloadVideo = (req, res) => {
     const outputDirectory = path.join(__dirname, '..', 'output_directory');
 
-    // Find the first video file in the output directory
     fs.readdir(outputDirectory, (err, files) => {
         if (err) {
             return res.status(500).json({ message: 'Error reading output directory', error: err });
         }
 
-        // Assuming there is only one video file, take the first one
-        const videoFile = files.find(file => file.endsWith('.mp4') || file.endsWith('.avi') || file.endsWith('.mkv') || file.endsWith('.mov'));
+        // Filter for video files based on possible extensions
+        const videoFile = files.find(file => Object.values(mimeTypeToFormat).some(ext => file.endsWith(`.${ext}`)));
 
         if (!videoFile) {
             return res.status(404).json({ message: 'No video file found in the output directory' });
@@ -253,14 +258,24 @@ const downloadVideo = (req, res) => {
 
         const filePath = path.join(outputDirectory, videoFile);
 
-        // Use res.download to send the file to the client
+        // Extract the MIME type from the file extension
+        const fileExtension = path.extname(videoFile).substring(1); // Get file extension without the dot
+        const mimeType = Object.keys(mimeTypeToFormat).find(key => mimeTypeToFormat[key] === fileExtension);
+
+        if (!mimeType) {
+            return res.status(415).json({ message: 'Unsupported video file format' });
+        }
+
+        // Set the Content-Type header based on the MIME type
+        res.setHeader('Content-Type', mimeType);
+
+        // Use res.download to send the file to the client with the correct filename
         res.download(filePath, videoFile, (err) => {
-            console.log("enter res.donwload")
             if (err) {
                 return res.status(500).json({ message: 'Error downloading video file', error: err });
             }
 
-            // Delete the file after it has been successfully downloaded
+            // Optionally delete the file after download
             fs.unlink(filePath, (err) => {
                 if (err) {
                     console.error('Error deleting video file:', err);
