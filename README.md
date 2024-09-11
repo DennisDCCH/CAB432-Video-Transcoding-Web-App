@@ -1,5 +1,5 @@
 # Queensland University of Technology
-# CAB430 Cloud Computing 
+## CAB430 Cloud Computing 
 
 ## Overview
 
