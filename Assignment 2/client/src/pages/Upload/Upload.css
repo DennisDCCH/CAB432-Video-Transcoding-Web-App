@@ -1,0 +1,32 @@
+/* Upload.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.section {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Poppins',
+    sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  background: url(../../components/Assets/pexels-danielabsi-952670.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+.container {
+  /* background-color: red; */
+  position: relative;
+  padding: 20px;
+  width: auto; /* Ensure it doesn’t stretch to fill the parent’s width */
+  margin-top: 60px; /* Ensure there's enough space for fixed navbar */
+}
+
+.container h1 {
+  color: white;
+}
