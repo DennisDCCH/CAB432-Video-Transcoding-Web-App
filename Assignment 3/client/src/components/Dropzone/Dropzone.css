@@ -1,0 +1,95 @@
+.dropzone-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    padding: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+.below-dropzone {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropzone-buttons {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+}
+
+.dropzone-buttons button {
+    width: 400px;
+}
+
+.accepted-title {
+    margin-top: 50px;
+}
+
+.accepted-list {
+    gap: 10px;
+}
+
+.accepted-card {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    gap: 20px;
+}
+
+.x-button {
+    margin-left: 8px;
+    background-color: transparent;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.accepted-card p {
+    margin: 0;
+    flex-grow: 1; 
+}
+  
+.reject-list {
+    list-style-type: none; 
+}
+  
+.reject-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+  
+  
+.reject-list div {
+    flex-grow: 1;
+    margin-right: 16px;
+}
+  
+.reject-list p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.reject-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    color: #D3D3D3;
+}

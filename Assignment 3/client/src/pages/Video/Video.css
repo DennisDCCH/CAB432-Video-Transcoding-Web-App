@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.section {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Poppins',
+        sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    background: url(../../components/Assets/pexels-danielabsi-952670.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+.video-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.no-vid {
+    color: lightgrey;
+    font-size: 20px;
+}
+
+.no-content {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    color: white;
+    display: flex;
+    align-items: center; /* Center content horizontally */
+    padding: 30px;
+    width: auto;
+    height: auto;
+    border-radius: 16px;
+    gap: 50px;
+}
+
+.no-content a {
+    color: white; /* Match the color of the surrounding text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    
+}
+
+.no-content a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}

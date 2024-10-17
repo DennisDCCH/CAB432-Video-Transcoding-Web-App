@@ -1,0 +1,16 @@
+# Node modules directory
+/node_modules
+
+# SQLite database
+.mydatabase.db
+
+# Output directory
+/output-directory/
+
+# Thumbnails
+/thumbnails
+
+# Uploads
+/uploads
+
+.env
