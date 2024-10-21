@@ -8,6 +8,7 @@ This unit involves three assessments that together form a single project impleme
 ## Assignments
 
 ### Assignment 1: Monolithic Web Application Deployment
+[Watch Assignment 1 Video on Youtube](https://youtu.be/NhyooAm1Kts)
 
 **Objective:**  
 Implement and deploy a monolithic web application to a cloud virtual machine using a container.
@@ -24,6 +25,7 @@ Implement and deploy a monolithic web application to a cloud virtual machine usi
 - **User Login:** Implement basic user login with meaningful distinctions between different users.
 
 ### Assignment 2: Cloud Services and Statelessness
+[Watch Assignment 2 Video on Youtube](https://youtu.be/yEb-kf-tSBY)
 
 **Objective:**  
 Utilize cloud services for persistence to make your application stateless, and integrate additional cloud services to enhance functionality.
@@ -49,6 +51,7 @@ Utilize cloud services for persistence to make your application stateless, and i
   - Implement DNS as part of your cloud services setup.
 
 ### Assignment 3: Microservices and Cloud Applications
+[Watch Assignment 3 Video on Youtube](https://youtu.be/PZlmyDoVZW0)
 
 **Objective:**  
 Adopt a microservice-based cloud architecture and utilize cloud communication services to enhance the modularity and scalability of your application.
