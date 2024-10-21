@@ -23,9 +23,9 @@ app.use(fileUpload());
 app.use(cookieParser());
 
 // Routes
-app.use('/api', userRoute);
-app.use('/api', videoRoute);
-app.use('/api', thumbnailRoute);
+app.use('/', userRoute);
+app.use('/', videoRoute);
+app.use('/', thumbnailRoute);
 
 // Basic "Hello World" route for testing purposes
 app.get('/', (req, res) => {
