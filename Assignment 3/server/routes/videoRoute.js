@@ -20,9 +20,6 @@ router.delete('/request-delete', videoController.deleteRequest)
 // Route to reformat video
 router.post('/reformat', videoController.reformatVideo)
 
-// Route to reformat video
-// router.post('/reformat-queue', videoController.reformatQueue)
-
 router.get('/download', videoController.downloadVideo)
 
 module.exports = router;
